@@ -110,14 +110,18 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">Private Key</dt>
-              <dd className="text-sm font-mono max-w-sm overflow-auto p-2 bg-gray-200 rounded-lg text-gray-700">
-                {account.privateKey}
+              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
+                <span className="text-xs font-mono text-gray-700">
+                  {account.privateKey}
+                </span>
               </dd>
             </div>
             <div>
               <dt className="font-bold text-xs">Address</dt>
-              <dd className="text-sm font-mono max-w-sm overflow-auto p-2 bg-gray-200 rounded-lg text-gray-700">
-                {account.address}
+              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
+                <span className="text-xs font-mono text-gray-700">
+                  {account.address}
+                </span>
               </dd>
             </div>
           </dl>
@@ -146,15 +150,18 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">AES encryption</dt>
-              <dd className="text-sm font-mono max-w-sm overflow-auto p-2 bg-gray-200 rounded-lg text-gray-700">
-                {account.encryptedPrivateKey}
+
+              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
+                <span className="text-xs font-mono text-gray-700">
+                  {account.encryptedPrivateKey}
+                </span>
               </dd>
             </div>
           </dl>
         </Box>
       )}
       {account.encryptedPrivateKey && (
-        <Box type="server">
+        <Box type="client">
           <StepTitle>
             4. Please enter your password <br />
             if you want to use your wallet
@@ -179,8 +186,10 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">Decrypted Private Key</dt>
-              <dd className="text-sm font-mono max-w-sm overflow-auto p-2 bg-gray-200 rounded-lg text-gray-700">
-                {account.decryptedPrivateKey}
+              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
+                <span className="text-xs font-mono text-gray-700">
+                  {account.decryptedPrivateKey}
+                </span>
               </dd>
             </div>
           </dl>
