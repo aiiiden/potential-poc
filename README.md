@@ -7,8 +7,7 @@ This POC has been primarily conducted with a focus on the management of the Priv
 
 ## Principle (원리)
 
-![image](https://github.com/aiiiden/potential-poc/assets/65929678/61360cf1-2274-4fae-9d19-333f9d73426f)
-
+![image](https://github.com/aiiiden/potential-poc/assets/65929678/3f340e39-d142-4daa-a0e0-5417419925bc)
 
 Creating a blockchain account requires the storage of a Private Key (PK). However, storing the PK in a database or similar repository poses a significant security risk. To address this, I encrypt the PK using AES encryption. This ensures that even if a third party steals the database data, they cannot use it. Each time a user takes a specific blockchain action, the AES is decrypted to execute the necessary logic.
 
