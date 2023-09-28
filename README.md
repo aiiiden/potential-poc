@@ -10,9 +10,9 @@ Creating a blockchain account requires the storage of a Private Key (PK). Howeve
 
 ## Limitations (제한 사항)
 
-In reality, a database should be used, but due to a lack of backend resources, client storage (such as local storage) is substituted.
+In reality, a database should be used, but due to a lack of backend resources, client storage (such as local storage) is substituted ONLY in this POC project.
 
-실제로는 Database를 사용해야 하나, 백엔드 리소스가 없기 때문에 클라이언트 storage (localstorage) 등으로 대체합니다.
+실제로는 Database를 사용해야 하나, 백엔드 리소스가 없기 때문에 본 POC에서는 클라이언트 storage (localstorage) 등으로 대체합니다.
 
 ## Stack (스택)
 
