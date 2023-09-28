@@ -1,5 +1,4 @@
-This is a Proof of Concept (POC) to demonstrate the use of blockchain technology, even for users who are not aware of blockchain.  
-
+This is a Proof of Concept (POC) to demonstrate the use of blockchain technology, even for users who are not aware of blockchain.
 
 유저가 블록체인을 몰라도 블록체인 기술을 사용할 수 있는지에 대한 POC입니다.
 
