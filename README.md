@@ -26,6 +26,37 @@ The encrypted Private Key (PK) is stored on the server, and the user-designated 
 
 이렇게 암호화된 Private Key(PK)는 서버에 저장되며, 유저가 지정한 Password는 유저가 가지게 됩니다. 이렇게 되면, 서버는 유저에게 Password를 계속 물어보는 방식으로 안전하게 블록체인 로직을 실행하게 됩니다.
 
+
+## Security Considerations (보안적 고려사항)
+
+Security is a paramount aspect when utilizing blockchain technology. This project needs to consider several key security aspects.
+
+보안은 블록체인 기술 활용 시 중요한 측면 중 하나입니다. 이 프로젝트에서는 몇 가지 주요 보안 측면을 고려할 필요가 있습니다.
+
+### Encryption:
+
+Safe storage of the Private Key is crucial. While the use of AES encryption is proposed, the strength of the encryption method used and key management practices are also vital. Thorough management and monitoring are essential to prevent key leakage.  
+
+Private Key의 안전한 저장은 중요합니다. AES 암호화 사용이 제안되었지만, 사용된 암호화 방식의 강도와 키 관리 방법도 중요합니다. 키가 유출되지 않도록 철저한 관리와 모니터링이 필요합니다.
+
+### Two-Factor Authentication (2FA):
+
+Combining passwords with OTP enhances the security of user accounts. This makes unauthorized access more difficult, bolstering user authentication safety.  
+
+비밀번호와 OTP를 결합한 이중 인증은 사용자 계정의 보안을 강화할 수 있습니다. 이는 비인가 접근을 어렵게 만들고, 사용자 인증의 안전성을 높입니다.
+
+### Access Control:
+
+Access to servers and databases must be strictly limited. Adhere to the principle of least privilege, and deactivate unnecessary services and ports.  
+
+서버와 데이터베이스에 대한 접근은 엄격하게 제한되어야 합니다. 최소 권한 원칙을 따라야 하며, 불필요한 서비스와 포트는 비활성화되어야 합니다.
+
+### User PK Management:
+
+It's important to provide options and guidelines for users to manage their Private Key safely. Offer clear instructions for Private Key backup and recovery.  
+
+사용자가 자신의 Private Key를 안전하게 관리할 수 있는 옵션과 지침을 제공하는 것도 중요합니다. 사용자에게 Private Key 백업과 복구에 대한 명확한 지침을 제공해야 합니다.
+
 ## Demo
 
 Deployed by vercel.
