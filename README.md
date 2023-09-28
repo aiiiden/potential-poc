@@ -11,6 +11,16 @@ Creating a blockchain account requires the storage of a Private Key (PK). Howeve
 
 블록체인 Account를 생성하는데에는 Private Key(PK)를 저장해야 합니다. 하지만, PK를 Database와 같은 저장소에 저장하는 것은 큰 보안적 위험이 따릅니다. 따라서, 저는 이 PK를 AES 대칭키 보안방식을 통해 암호화하여, 제 3자가 Database의 데이터를 탈취하여도 사용할 수 없도록 합니다. 사용자가 특정 블록체인 액션을 취할때 마다 AES를 복호화하여 필요한 로직을 작동시킵니다.
 
+## Effect (효과)
+
+The encrypted Private Key (PK) is stored on the server, and the user-designated password is held by the user. This setup allows the server to securely execute blockchain logic by continually prompting the user for the password.
+Users can easily access the necessary blockchain technology in the service without the process of installing a separate wallet client.  
+
+이렇게 암호화된 Private Key(PK)는 서버에 저장되며, 유저가 지정한 Password는 유저가 가지게 됩니다. 이렇게 되면, 서버는 유저에게 Password를 계속 물어보는 방식으로 안전하게 블록체인 로직을 실행하게 됩니다.   
+
+유저는 따로 지갑 클라이언트를 설치하는 과정없이 서비스에서 필요한 블록체인 기술에 쉽게 접근이 가능합니다.
+
+
 ## Limitations (제한 사항)
 
 In reality, a database should be used, but due to a lack of backend resources, client storage (such as local storage) is substituted ONLY in this POC project.
@@ -22,13 +32,6 @@ In reality, a database should be used, but due to a lack of backend resources, c
 - Typescript Next.js (App router)
 - Viem
 - Tailwind
-
-## Effect (효과)
-
-The encrypted Private Key (PK) is stored on the server, and the user-designated password is held by the user. This setup allows the server to securely execute blockchain logic by continually prompting the user for the password.
-
-이렇게 암호화된 Private Key(PK)는 서버에 저장되며, 유저가 지정한 Password는 유저가 가지게 됩니다. 이렇게 되면, 서버는 유저에게 Password를 계속 물어보는 방식으로 안전하게 블록체인 로직을 실행하게 됩니다.
-
 
 ## Security Considerations (보안적 고려사항)
 
