@@ -1,6 +1,9 @@
 This is a Proof of Concept (POC) to demonstrate the use of blockchain technology, even for users who are not aware of blockchain.
+This POC has been primarily conducted with a focus on the management of the Private Key.
 
 유저가 블록체인을 몰라도 블록체인 기술을 사용할 수 있는지에 대한 POC입니다.
+본 POC는 Private Key에 대한 관리를 중점으로 진행되었습니다.
+
 
 ## Principle (원리)
 
