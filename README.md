@@ -10,7 +10,7 @@ Creating a blockchain account requires the storage of a Private Key (PK). Howeve
 In reality, a database should be used, but due to a lack of backend resources, client storage (such as local storage) is substituted. 
 실제로는 Database를 사용해야 하나, 백엔드 리소스가 없기 때문에 클라이언트 storage (localstorage) 등으로 대체합니다.
 
-Stack (스택)
+## Stack (스택)
 - Typescript Next.js (App router)
 - Viem
 - Tailwind
