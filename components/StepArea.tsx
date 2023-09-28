@@ -5,6 +5,7 @@ import Box from "./Box";
 import StepTitle from "./StepTitle";
 import { generatePrivateKey, privateKeyToAccount } from "viem/accounts";
 import { decryptAES, encryptAES } from "@/util/aes";
+import CodeView from "./CodeView";
 interface Wallet {
   privateKey: string;
   address: string;
@@ -110,19 +111,11 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">Private Key</dt>
-              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
-                <span className="text-xs font-mono text-gray-700">
-                  {account.privateKey}
-                </span>
-              </dd>
+              <CodeView as="dd">{account.privateKey}</CodeView>
             </div>
             <div>
               <dt className="font-bold text-xs">Address</dt>
-              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
-                <span className="text-xs font-mono text-gray-700">
-                  {account.address}
-                </span>
-              </dd>
+              <CodeView as="dd">{account.address}</CodeView>
             </div>
           </dl>
         </Box>
@@ -134,6 +127,7 @@ export default function StepArea() {
             <input
               name="password"
               type="password"
+              autoComplete="off"
               className="px-3 py-2 rounded-lg border border-gray-400"
             />
             <button className="rounded-lg bg-gradient-to-tr from-blue-500 to-purple-500 px-3 py-2">
@@ -150,12 +144,7 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">AES encryption</dt>
-
-              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
-                <span className="text-xs font-mono text-gray-700">
-                  {account.encryptedPrivateKey}
-                </span>
-              </dd>
+              <CodeView as="dd">{account.encryptedPrivateKey}</CodeView>
             </div>
           </dl>
         </Box>
@@ -170,6 +159,7 @@ export default function StepArea() {
             <input
               name="password"
               type="password"
+              autoComplete="off"
               className="px-3 py-2 rounded-lg border border-gray-400"
             />
             <button className="rounded-lg bg-gradient-to-tr from-blue-500 to-purple-500 px-3 py-2">
@@ -186,11 +176,7 @@ export default function StepArea() {
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">Decrypted Private Key</dt>
-              <dd className="overflow-auto max-w-[180px] p-2 bg-gray-200 rounded-lg">
-                <span className="text-xs font-mono text-gray-700">
-                  {account.decryptedPrivateKey}
-                </span>
-              </dd>
+              <CodeView as="dd">{account.decryptedPrivateKey}</CodeView>
             </div>
           </dl>
         </Box>
