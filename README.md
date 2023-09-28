@@ -19,3 +19,9 @@ In reality, a database should be used, but due to a lack of backend resources, c
 - Typescript Next.js (App router)
 - Viem
 - Tailwind
+
+## Effect (효과)
+
+The encrypted Private Key (PK) is stored on the server, and the user-designated password is held by the user. This setup allows the server to securely execute blockchain logic by continually prompting the user for the password.
+
+이렇게 암호화된 Private Key(PK)는 서버에 저장되며, 유저가 지정한 Password는 유저가 가지게 됩니다. 이렇게 되면, 서버는 유저에게 Password를 계속 물어보는 방식으로 안전하게 블록체인 로직을 실행하게 됩니다.
