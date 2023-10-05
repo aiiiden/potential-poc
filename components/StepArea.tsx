@@ -152,7 +152,7 @@ export default function StepArea() {
       {account.encryptedPrivateKey && (
         <Box type="client">
           <StepTitle>
-            4. Please enter your password <br />
+            3. Please enter your password <br />
             if you want to use your wallet
           </StepTitle>
           <form onSubmit={decryptByPassword} className="flex flex-col gap-1">
