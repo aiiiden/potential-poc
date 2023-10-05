@@ -172,7 +172,10 @@ export default function StepArea() {
       )}
       {account.decryptedPrivateKey && (
         <Box type="server">
-          <StepTitle>Server can temporarily use your wallet!</StepTitle>
+          <StepTitle>
+            Server can temporarily <br />
+            use your wallet!
+          </StepTitle>
           <dl className="px-4 flex flex-col gap-2">
             <div>
               <dt className="font-bold text-xs">Decrypted Private Key</dt>
